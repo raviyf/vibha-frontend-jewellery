@@ -10,8 +10,8 @@ const ProductRail = ({ collection }: { collection: ProductCollection }) => {
   const { data } = useFeaturedProductsQuery(collection.id)
 
   return (
-    <div className="small:py-12">
-      <div className="content-container py-12">
+    <div className="md:pt-10 pt-32">
+      <div className="content-container ">
         <div className="flex justify-between mb-8">
           <Text className="txt-xlarge">{collection.title}</Text>
           <InteractiveLink href={`/collections/${collection.handle}`}>

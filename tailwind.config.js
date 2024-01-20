@@ -33,7 +33,12 @@ module.exports = {
           80: "#1F2937",
           90: "#111827",
         },
+        darkmaroon: "#5A2A38",
+        gold: "#CAB273",
+        gradient:
+          "linear-gradient(173deg, #FAFAFA -21.37%, #E9E9E9 67.54%, rgba(227, 227, 224, 0.24) 94.75%);",
       },
+
       borderRadius: {
         none: "0px",
         soft: "2px",
@@ -51,6 +56,7 @@ module.exports = {
         101: "15rem",
         102: "31.5rem",
         103: "44rem",
+        104: "95rem",
       },
       maxWidth: {
         "8xl": "100rem",

@@ -37,7 +37,7 @@ const MainMenu = () => {
         </div>
 
         <Heading className="txt-compact-xlarge-plus text-ui-fg-subtle uppercase">
-          Medusa Store
+          VIBHA
         </Heading>
 
         <div className="flex-1 basis-0 flex justify-end">
@@ -70,6 +70,18 @@ const MainMenu = () => {
                 >
                   <span className="sr-only">Go to Store</span>
                   <span>Store</span>
+                  <ChevronDown className="-rotate-90" />
+                </button>
+              </Link>
+            </li>
+            <li className="bg-gray-50 p-4 rounded-rounded">
+              <Link href="http://localhost:8001/">
+                <button
+                  className="flex items-center justify-between w-full"
+                  onClick={close}
+                >
+                  <span className="sr-only">Go to Store</span>
+                  <span>Apparel</span>
                   <ChevronDown className="-rotate-90" />
                 </button>
               </Link>

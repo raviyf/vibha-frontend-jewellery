@@ -16,6 +16,10 @@ const ProductTabs = ({ product }: ProductTabsProps) => {
   const tabs = useMemo(() => {
     return [
       {
+        label: "Sizing Chart",
+        component: <SizingChart />,
+      },
+      {
         label: "Product Information",
         component: <ProductInfoTab product={product} />,
       },
@@ -40,6 +44,22 @@ const ProductTabs = ({ product }: ProductTabsProps) => {
           </Accordion.Item>
         ))}
       </Accordion>
+    </div>
+  )
+}
+
+const SizingChart = () => {
+  return (
+    <div className="text-small-regular py-8">
+      <div className="grid grid-cols-1 gap-y-8">
+        <div className="flex items-start gap-x-2">
+          <img
+            src="/f3.png"
+            alt="f1"
+            className="object-cover xl:w-128 lg:w-97 sm:w-101 2xl:w-102 md:w-100 w-99"
+          />
+        </div>
+      </div>
     </div>
   )
 }

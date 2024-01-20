@@ -8,7 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-mode="light">
-      <body>
+      <body className="bg-gradient">
         <Providers>
           <main className="relative">{children}</main>
         </Providers>

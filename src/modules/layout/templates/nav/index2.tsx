@@ -6,7 +6,7 @@ const Navbar = () => {
 
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
-      if (window.scrollY > lastScrollY) {
+      if (window.scrollY >= 200) {
         setShow(false)
       } else {
         setShow(true)
@@ -33,7 +33,7 @@ const Navbar = () => {
       }`}
     >
       <div>
-        <div className=" bg-white">
+        <div className="bg-white">
           <div className=" hidden md:grid grid-cols-8 justify-between">
             <a
               href=""

@@ -11,7 +11,7 @@ const SideMenuItems = {
   Search: "",
   Account: "/account",
   Cart: "/cart",
-  Apparel: "/apparel",
+  Apparel: "http://localhost:8001/",
 }
 
 const SideMenu = ({ searchModalOpen }: { searchModalOpen: () => void }) => {
@@ -96,8 +96,7 @@ const SideMenu = ({ searchModalOpen }: { searchModalOpen: () => void }) => {
                         />
                       </div>
                       <Text className="flex justify-between txt-compact-small">
-                        © {new Date().getFullYear()} Medusa Store. All rights
-                        reserved.
+                        © {new Date().getFullYear()} Vibha. All rights received.
                       </Text>
                     </div>
                   </div>

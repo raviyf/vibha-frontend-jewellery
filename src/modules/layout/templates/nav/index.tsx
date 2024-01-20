@@ -26,8 +26,8 @@ const Nav = () => {
         Receive a Vibha eternal necklace on orders above 20000
       </div>
       <header>
-        <div className="relative h-20 md:h-32 px-8 mx-auto duration-200 bg-white border-ui-border-base">
-          <nav className="txt-xsmall-plus text-ui-fg-subtle flex items-center justify-between w-full h-full text-small-regular">
+        <div className="relative h-20 md:h-32 px-0 duration-200 bg-white border-ui-border-base">
+          <nav className=" txt-xsmall-plus  flex items-center justify-between w-full h-full text-lg font-optinonoy">
             <div className="flex-1 basis-0 h-full flex items-center">
               <div className="block small:hidden">
                 <Hamburger setOpen={toggle} />
@@ -40,7 +40,7 @@ const Nav = () => {
             <div className="flex items-center h-full">
               <Link
                 href="/"
-                className="text-2xl font-holispay text-black uppercase md:text-8xl"
+                className="text-2xl font-holispay  text-black uppercase md:text-8xl"
               >
                 Vibha
               </Link>
@@ -65,9 +65,10 @@ const Nav = () => {
               <CartDropdown />
             </div>
           </nav>
-          <Navbar />
+
           <MobileMenu />
         </div>
+        <Navbar />
       </header>
     </div>
   )
