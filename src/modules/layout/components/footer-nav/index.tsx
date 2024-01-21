@@ -12,6 +12,7 @@ import { useStore } from "@lib/context/store-context"
 import ChevronDown from "@modules/common/icons/chevron-down"
 import { MagnifyingGlassMini, XMark as X } from "@medusajs/icons"
 import { Heading } from "@medusajs/ui"
+import MainMenu from "@modules/mobile-menu/components/main-menu"
 
 const FooterNav = () => {
   const { collections } = useCollections()
@@ -21,6 +22,10 @@ const FooterNav = () => {
 
   const setScreenCountry = () => setScreen("country")
   const setScreenSearch = () => setScreen("search")
+  const {
+    close,
+    screen: [_, setScreen],
+  } = useMobileMenu()
 
   return (
     <div>
@@ -214,46 +219,58 @@ const FooterNav = () => {
                   </a>
                 </p>
               </div>
-              <div className="flex flex-col gap-y-4">
-                <span className="text-gray-700 uppercase">Delivery</span>
-                <button
-                  className="flex items-center justify-between border-b border-gray-200 py-2"
-                  onClick={setScreenCountry}
-                >
-                  <span className="sr-only">
-                    Click to select shipping country
-                  </span>
-                  <div className="flex items-center gap-x-2">
-                    <ReactCountryFlag countryCode={countryCode || "us"} svg />
-                    <span className="normal-case">
-                      Shipping to{" "}
-                      {countries?.find((c) => c.country === countryCode)?.label}
-                    </span>
+              <div className="flex flex-col flex-1">
+                <div className="space-y-6 flex-1 flex flex-col justify-between p-6">
+                  <div className="flex flex-col flex-1 text-large-regular text-gray-900">
+                    <div className="flex flex-col">
+                      <div className="flex flex-col gap-y-8 text-small-regular">
+                        <div className="flex flex-col gap-y-4">
+                          <button
+                            className="flex items-center justify-between border-b border-gray-200 py-2"
+                            onClick={setScreenCountry}
+                          >
+                            <span className="sr-only">
+                              Click to select shipping country
+                            </span>
+                            <div className="flex items-center gap-x-2">
+                              <ReactCountryFlag
+                                countryCode={countryCode || "us"}
+                                svg
+                              />
+                              <span className="normal-case">
+                                Shipping to{" "}
+                                {
+                                  countries?.find(
+                                    (c) => c.country === countryCode
+                                  )?.label
+                                }
+                              </span>
+                            </div>
+                            <ChevronDown className="" />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <ChevronDown className="-rotate-90" />
-                </button>
-                <button
-                  className="flex items-center gap-x-2"
-                  onClick={setScreenCountry}
-                ></button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="flex  w-full   items-center justify-between text-sm md-xs text-white  text-ui-fg-muted bg-black ">
-        <Link href="/" className="text-2xl md:pl-10 font-optinonoy md-6xl ">
-          VIBHA
-        </Link>
-        <p className="flex flex-col font-optinonoy md:px-1 md:pr-10 px-12">
-          <span className="txt-compact-small ">
-            © {new Date().getFullYear()} VIBHA. All rights reserved.
-          </span>
-          <span>
-            VIBHA and the V logo are registered and trademarks of VIBHA.
-          </span>
-        </p>
+        <div className="flex  w-full   items-center justify-between text-sm md-xs text-white  text-ui-fg-muted bg-black ">
+          <Link href="/" className="text-2xl md:pl-10 font-optinonoy md-6xl ">
+            VIBHA
+          </Link>
+          <p className="flex flex-col font-optinonoy md:px-1 md:pr-10 px-12">
+            <span className="txt-compact-small ">
+              © {new Date().getFullYear()} VIBHA. All rights reserved.
+            </span>
+            <span>
+              VIBHA and the V logo are registered and trademarks of VIBHA.
+            </span>
+          </p>
+        </div>
       </div>
     </div>
   )
