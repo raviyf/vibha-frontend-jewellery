@@ -5,7 +5,7 @@ import { size } from "lodash"
 export default function Navbars() {
   const [navSize, setnavSize] = useState("10rem")
   const [navColor, setnavColor] = useState("#fafafa")
-  const [fontySize, setfontySize] = useState("")
+  const [fontySize, setfontySize] = useState("2.25rem")
   const listenScrollEvent = () => {
     window.scrollY > 10 ? setnavColor("#fafafa") : setnavColor("#fafafa")
     window.scrollY > 10 ? setnavSize("5rem") : setnavSize("10rem")
