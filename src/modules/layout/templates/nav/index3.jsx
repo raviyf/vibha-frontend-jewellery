@@ -24,12 +24,15 @@ export default function Navbars() {
         style={{
           backgroundColor: navColor,
           height: navSize,
-          fontSize: fontySize,
-          transition: "all 0.75s",
+          transition: "all 0.5s",
         }}
       >
-        <div className="flex items-center h-full">
-          <Link href="/" className=" font-holispay  text-black uppercase">
+        <div className="flex items-center h-full transition-none">
+          <Link
+            style={{ fontSize: fontySize }}
+            href="/"
+            className=" font-holispay  text-black uppercase transition-none"
+          >
             Vibha
           </Link>
         </div>
