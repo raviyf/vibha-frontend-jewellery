@@ -54,8 +54,8 @@ const SizingChart = () => {
       <div className="grid grid-cols-1 gap-y-8">
         <div className="flex items-start gap-x-2">
           <img
-            src="/f3.png"
-            alt="f1"
+            src="/sizechart.jpeg"
+            alt="sizechart"
             className="object-cover xl:w-128 lg:w-97 sm:w-101 2xl:w-102 md:w-100 w-99"
           />
         </div>

@@ -6,7 +6,7 @@ const Navbar = () => {
 
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
-      if (window.scrollY >= 200) {
+      if (window.scrollY > 0) {
         setShow(false)
       } else {
         setShow(true)
@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full transition-opacity delay-300 transform ${
+      className={`fixed w-full transition-duration-500 transition-opacity delay-300 transform ${
         show ? "translate-y-0" : "-translate-y-100"
       }`}
     >

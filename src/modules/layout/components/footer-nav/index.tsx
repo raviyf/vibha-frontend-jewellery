@@ -53,7 +53,7 @@ const FooterNav = () => {
           </p>
         </div>
         <div className="2xl:pl-58 2xl:pb-96">
-          <p className=" absolute font-bold font-holispay lg:text-9xl 2xl:text-10xl px-10 text-black lg:pl-96 md:text-8xl text-9xl md:pl-48">
+          <p className=" absolute font-bold font-holispay text-7xl/[2.5px] py-10 xl:text-[200px] lg:text-9xl 2xl:text-10xl px-10 text-black lg:pl-96 md:text-8xl text-9xl md:pl-48">
             V
           </p>
         </div>

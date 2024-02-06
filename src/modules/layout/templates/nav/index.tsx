@@ -23,7 +23,11 @@ const Nav = () => {
 
   return (
     <div className="sticky top-0 inset-x-0 z-50 group">
-      <div className="h-8 md:h-10 lg:h-10 px-2 py-1 w-full text-sm font-holispay md:w-full lg:w-full md:text-2xl lg:text-4xl bg-black text-white text-center  align-middle">
+      {/* <div className="h-2 md:h-10 lg:h-10 px-2 py-1 w-full text-sm font-holispay md:w-full lg:w-full md:text-2xl lg:text-4xl bg-black text-white text-center  align-middle">
+        Receive a Vibha eternal necklace on orders above 20000
+      </div> */}
+
+   <div className="text-sm bg-black text-white text-center font-holispay align-middle">
         Receive a Vibha eternal necklace on orders above 20000
       </div>
 

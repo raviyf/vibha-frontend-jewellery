@@ -5,28 +5,34 @@ import Link from "next/link"
 
 const Hero = () => {
   return (
-    <div className="flex flex-row 2xl:pt-16 relative h-full">
+
+    <div className="row-span-3 flex flex-row 2xl:pt-16 relative h-full">
       <img
         src="/f1.png"
         alt="f1"
-        className="object-cover xl:w-128 lg:w-97 2xl:w-102 sm:w-101 md:w-100 w-99"
+        className="object-cover w-32 xl:w-max lg:w-97 2xl:w-102 md:w-10"
       />
       <img
         src="/f2.png"
         alt="f1"
-        className="object-cover xl:w-128 lg:w-97 sm:w-101 2xl:w-102 md:w-100 w-99"
+        className="object-cover w-32 xl:w-max lg:w-97 2xl:w-102 md:w-10"
       />
       <img
+
+        // style={{
+        //   height:800,width:350
+        //           }}
+                  
         src="/f3.png"
         alt="f1"
-        className="object-cover xl:w-128 lg:w-97 sm:w-101 2xl:w-102 md:w-100 w-99"
+        className="object-cover w-32 xl:h-800 w-350 lg:w-97 2xl:w-102 md:w-10"
       />
-      <div className=" absolute flex flex-col text-lg xl:pl-80 lg:px-44 2xl:ml-96 md:px-10 py-52 pl-20 md:ml-48 md:py-48 ">
-        <p className="font-optinonoy text-2xl md:text-6xl sm:text-lg ">
+      <div className=" absolute flex flex-col text-lg xl:py-102 xl:px-32 lg:px-44 2xl:ml-96 md:px-10 py-52 pl-20 md:ml-48 md:py-48 ">
+        <p className="xl:text-white font-optinonoy text-2xl md:text-6xl sm:text-lg ">
           <span>Embrace the </span>
-          <span className="text-yellow-300">Light</span>
+          <span className="text-yellow-400 xl:text-yellow-100 ">Light</span>
         </p>
-        <p className="px-0 text-md sm:text-md md:text-lg font-helvitica md:px-8">
+        <p className="xl:text-white px-0 text-md sm:text-md md:text-lg font-helvitica md:px-8">
           Find your festive sparkle,a world of choices awaits
         </p>
         <div className="flex flex-row sm:px-3 px-0 py-1 sm:py-2 md:px-8 md:py-1 md:text-md text-sm">

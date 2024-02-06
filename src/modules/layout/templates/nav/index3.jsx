@@ -3,13 +3,13 @@ import Link from "next/link"
 import { size } from "lodash"
 
 export default function Navbars() {
-  const [navSize, setnavSize] = useState("10rem")
-  const [navColor, setnavColor] = useState("#fafafa")
-  const [fontySize, setfontySize] = useState("6rem")
+  const [navSize, setnavSize] = useState("6rem")
+  const [navColor, setnavColor] = useState("")
+  const [fontySize, setfontySize] = useState("6em")
   const listenScrollEvent = () => {
-    window.scrollY > 10 ? setnavColor("#fafafa") : setnavColor("#fafafa")
-    window.scrollY > 10 ? setnavSize("5rem") : setnavSize("10rem")
-    window.scrollY > 10 ? setfontySize("2.25rem") : setfontySize("6rem")
+    window.scrollY > 0 ? setnavColor("") : setnavColor("")
+    window.scrollY > 0 ? setnavSize("5rem") : setnavSize("6rem")
+    window.scrollY > 0 ? setfontySize("2.25rem") : setfontySize("6rem")
   }
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent)
@@ -24,16 +24,16 @@ export default function Navbars() {
         style={{
           backgroundColor: navColor,
           height: navSize,
-          transition: "all 0.5s",
+          transition: "all 0.75s",
         }}
       >
         <div className="flex items-center h-full transition-none">
           <Link
-            style={{ fontSize: fontySize }}
+            // style={{ fontSize: fontySize }}
             href="/"
-            className=" font-holispay  text-black uppercase transition-none"
+            className="text-4xl font-holispay xl:{fontySize} text-black uppercase transition-none"
           >
-            Vibha
+            CASA Vibha
           </Link>
         </div>
       </nav>
