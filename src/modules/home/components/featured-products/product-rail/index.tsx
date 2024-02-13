@@ -10,7 +10,7 @@ const ProductRail = ({ collection }: { collection: ProductCollection }) => {
   const { data } = useFeaturedProductsQuery(collection.id)
 
   return (
-    <div className="md:pt-10 pt-32">
+    <div className="">
       <div className="content-container ">
         <div className="flex justify-between mb-8">
           <Text className="txt-xlarge">{collection.title}</Text>

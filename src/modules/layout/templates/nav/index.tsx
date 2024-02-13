@@ -27,7 +27,7 @@ const Nav = () => {
         Receive a Vibha eternal necklace on orders above 20000
       </div> */}
 
-   <div className="text-sm bg-black text-white text-center font-holispay align-middle">
+      <div className="text-sm bg-black  text-white text-center font-holispay align-middle">
         Receive a Vibha eternal necklace on orders above 20000
       </div>
 
