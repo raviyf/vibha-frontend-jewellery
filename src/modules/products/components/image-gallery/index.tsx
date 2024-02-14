@@ -1,4 +1,5 @@
 import { Image as MedusaImage } from "@medusajs/medusa"
+import React, { useState } from "react"
 import { Container } from "@medusajs/ui"
 import Image from "next/image"
 
@@ -7,19 +8,33 @@ type ImageGalleryProps = {
 }
 
 const ImageGallery = ({ images }: ImageGalleryProps) => {
+  const [activeIndex, setActiveIndex] = useState(0)
+  const nextSlide = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    )
+  }
+  const prevSlide = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    )
+  }
   return (
     <div className="flex items-start relative">
-      <div className="flex 2xl:flex-row lg:flex-col flex-1 small:mx-1 gap-y-4">
+      <button onClick={prevSlide} className="carousel__btn carousel__btn--prev">
+        &lt;
+      </button>
+      <div className="flex  lg:flex-row flex-1 lg:pt-10 small:mx-1 gap-x-10">
         {images.map((image, index) => {
           return (
             <Container
               key={image.id}
-              className="w-[200px] h-[250px]  xl:w-[500px] xl:h-[600px]  relative bg-ui-bg-subtle"
+              className="relative w-48 h-52 sm:w-64 sm:h-96 md:w-96 md:h-96 overflow-hidden bg-ui-bg-subtle"
               id={image.id}
             >
               <Image
-                src={image.url}
-                priority={index <= 2 ? true : false}
+                src={images[activeIndex].url}
+                // priority={index <= 2 ? true : false}
                 className="absolute inset-0 rounded-rounded"
                 alt={`Product image ${index + 1}`}
                 fill
@@ -31,6 +46,12 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
             </Container>
           )
         })}
+        <button
+          onClick={nextSlide}
+          className="carousel__btn carousel__btn--next"
+        >
+          &gt;
+        </button>
       </div>
     </div>
   )
