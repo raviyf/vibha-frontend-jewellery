@@ -2,18 +2,11 @@
 
 import clsx from "clsx"
 import { useCollections, useProductCategories } from "medusa-react"
-import { Text } from "@medusajs/ui"
 import Link from "next/link"
-import MedusaCTA from "../medusa-cta"
-import ReactCountryFlag from "react-country-flag"
 import useCountryOptions from "@lib/hooks/use-country-options"
 import { useMobileMenu } from "@lib/context/mobile-menu-context"
 import { useStore } from "@lib/context/store-context"
-import ChevronDown from "@modules/common/icons/chevron-down"
-import { MagnifyingGlassMini, XMark as X } from "@medusajs/icons"
-import { Heading } from "@medusajs/ui"
-import MainMenu from "@modules/mobile-menu/components/main-menu"
-
+import privacypolicy from "./Privacypolicy"
 const FooterNav = () => {
   const { collections } = useCollections()
   const { product_categories } = useProductCategories()
@@ -44,12 +37,12 @@ const FooterNav = () => {
             </p>
           </div>
           <p className="pl-10 pb-10 pt-3 2xl:pl-36 md:pb-10 md:pl-16">
-            <a
-              href="http://localhost:8000/account/login"
+            <Link
+              href="/account/login"
               className="top-11 px-8 py-2 rounded-full font-holispay bg-gold text-black text-center"
             >
               Join the club
-            </a>
+            </Link>
           </p>
         </div>
         <div className="">
@@ -59,8 +52,8 @@ const FooterNav = () => {
         </div>
       </div>
       <div>
-        <div className="border-t border-ui-border-base w-screen">
-          <div className="content-container flex flex-col">
+        <div className="">
+          <div className="">
             <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-20">
               <div className="text-small-regular grid grid-cols-3 gap-x-10 md:gap-x-16">
                 {product_categories && (
@@ -184,14 +177,8 @@ const FooterNav = () => {
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="https://github.com/medusajs/nextjs-starter-medusa"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="hover:text-ui-fg-base"
-                      >
-                        Privacy policy
-                      </a>
+                      <Link href="/Privacypolicy">Privacy Policy</Link>
+                      {/* <a href="/privacyPolicy">Privacy Policy</a> */}
                     </li>
                     <li>Cookie consent</li>
                   </ul>
@@ -214,7 +201,7 @@ const FooterNav = () => {
                       />*/}
                 <p className="pt-8">
                   <a
-                    href="http://localhost:8000/account/login"
+                    href="/account/login"
                     className=" font-optinonoy inline-block rounded-lg px-4 py-1 border-2 border-black text-black"
                   >
                     SIGN UP

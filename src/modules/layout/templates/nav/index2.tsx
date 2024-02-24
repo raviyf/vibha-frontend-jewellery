@@ -34,7 +34,8 @@ const Navbar = () => {
     >
       <div>
         <div className="bg-white">
-          <div className=" hidden md:grid grid-cols-8 justify-between">
+          <div className="hidden md:hidden lg:grid grid-cols-8 justify-between">
+            {/* <div className="hidden md:hidden lg:grid grid-cols-8 justify-between">   */}
             <a
               href=""
               className="py-4 px-2 font-optinonoy text-black    hover:text-gray-500 transition duration-300"
