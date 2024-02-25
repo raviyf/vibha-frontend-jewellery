@@ -85,10 +85,10 @@ module.exports = {
           "Ubuntu",
           "sans-serif",
         ],
-        holispay: ["holispay"],
-        OPTINONOY: ["OPTINonoy-bolditalic"],
-        optinonoy: ["OPTINonoy-Medium"],
-        helvitica: ["Helvitica CE Medium Condensed"],
+        holispay: ["holispayregular"],
+        OPTINONOY: ["optinonoyregular"],
+        optinonoy: ["optinonoyregular"],
+        helvitica: ["helveticalight"],
       },
 
       keyframes: {
