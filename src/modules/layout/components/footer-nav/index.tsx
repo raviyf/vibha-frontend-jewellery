@@ -24,11 +24,11 @@ const FooterNav = () => {
     <div>
       <div className="flex flex-row">
         <div className=" 2xl:pt-10">
-          <text className="xl:text-4xl md:text-2xl font-optinonoy md:pb-10 pl-3  md:pl-16   2xl:pl-36">
+          <text className="xl:text-4xl md:text-2xl font-optinonoy md:pb-10 pl-3  md:pl-16   2xl:pl-20">
             Sign up and get 10% off*
           </text>
 
-          <div className="md:pl-16 2xl:pl-3  sm:px-0 pl-0  ">
+          <div className="md:pl-16 2xl:pl-16  sm:px-0 pl-0  ">
             <p className=" font-helvitica  text-sm md:grid md:grid-row-2   md:h-full md:p-6 p-1 pl-3 md:px-3 md:pt-6 md:w-80 w-98  ">
               Be first to receive updates on new collections,style
               inspiration,gift ideas and exclusive access. Sign up to Vibha
@@ -36,7 +36,7 @@ const FooterNav = () => {
               purchase(full-price items only).*Terms and condition apply.
             </p>
           </div>
-          <p className="pl-3 pb-10 pt-3 2xl:pl-36 md:pb-10 md:pl-16">
+          <p className="pl-3 pb-10 pt-3 2xl:pl-20 md:pb-10 md:pl-16">
             <Link
               href="/account/login"
               className="top-11 px-8 py-2 rounded-full font-holispay bg-gold text-black text-center"
@@ -52,10 +52,30 @@ const FooterNav = () => {
         </div>
       </div>
       <div>
-        <div className="px-10">
+        <div className="px-3 md:px-16 lg:px-16 flex sm:flex-row flex-col justify-between lg:pt-10 border-t-2 ">
+          <div className="flex flex-row sm:flex-col pb-16">
+            <div>
+              <p className="text-2xl  font-optinonoy flex flex-col gap-y-2">
+                Latest from Vibha
+              </p>
+              <p className="w-60 text-md font-helvitica">
+                Be the first to know about exciting new designs,special
+                events,store openings and much more
+              </p>
+            </div>
+
+            <p className="pt-8">
+              <a
+                href="/account/login"
+                className=" font-optinonoy inline-block rounded-lg px-4 py-1 border-2 border-black text-black"
+              >
+                SIGN UP
+              </a>
+            </p>
+          </div>
           <div className="">
-            <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-20">
-              <div className="text-small-regular grid grid-cols-3 gap-x-10 md:gap-x-16">
+            <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between">
+              <div className="text-small-regular s gap-x-10 md:gap-x-16">
                 {/* {product_categories && (
                   <div className="flex flex-col gap-y-2 ">
                     <span className="text-2xl font-optinonoy txt-ui-fg-base">
@@ -151,7 +171,7 @@ const FooterNav = () => {
                     </ul>
                   </div>
                 )} */}
-                <div className="flex flex-col gap-y-2">
+                <div className="flex flex-col gap-y-2 pb-4">
                   <span className="text-2xl font-optinonoy txt-ui-fg-base">
                     Legal
                   </span>
@@ -183,26 +203,6 @@ const FooterNav = () => {
                     <li>Cookie consent</li>
                   </ul>
                 </div>
-              </div>
-              <div className="flex flex-row sm:flex-col">
-                <div>
-                  <p className="text-2xl  font-optinonoy flex flex-col gap-y-2">
-                    Latest from Vibha
-                  </p>
-                  <p className="w-60 text-md font-helvitica">
-                    Be the first to know about exciting new designs,special
-                    events,store openings and much more
-                  </p>
-                </div>
-
-                <p className="pt-8">
-                  <a
-                    href="/account/login"
-                    className=" font-optinonoy inline-block rounded-lg px-4 py-1 border-2 border-black text-black"
-                  >
-                    SIGN UP
-                  </a>
-                </p>
               </div>
             </div>
           </div>
