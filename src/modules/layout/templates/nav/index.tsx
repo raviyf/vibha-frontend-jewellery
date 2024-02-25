@@ -33,12 +33,12 @@ const Nav = () => {
 
       <header>
         <div className="relative h-20 md:h-full px-0 duration-200 bg-white border-ui-border-base">
-          <nav className="  flex items-center justify-between h-full  font-optinonoy">
+          <nav className="  flex items-center justify-between w-full h-full  font-optinonoy">
             <div className="flex-1 basis-0 h-full flex items-center">
-              <div className="block small:hidden">
+              <div className="block xl:hidden">
                 <Hamburger setOpen={toggle} />
               </div>
-              <div className="hidden small:block h-full">
+              <div className="hidden xl:block h-full">
                 <SideMenu searchModalOpen={searchModalOpen} />
               </div>
             </div>

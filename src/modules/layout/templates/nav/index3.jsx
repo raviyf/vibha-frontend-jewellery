@@ -3,7 +3,7 @@ import Link from "next/link"
 import { size } from "lodash"
 
 export default function Navbars() {
-  const [navSize, setnavSize] = useState("5rem")
+  const [navSize, setnavSize] = useState("6rem")
   const [navColor, setnavColor] = useState("")
   const [fontySize, setfontySize] = useState("6em")
   const listenScrollEvent = () => {

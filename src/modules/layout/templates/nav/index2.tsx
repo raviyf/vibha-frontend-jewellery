@@ -34,7 +34,7 @@ const Navbar = () => {
     >
       <div>
         <div className="bg-white">
-          <div className="hidden md:hidden lg:grid grid-cols-8 justify-between">
+          <div className="hidden xl:grid grid-cols-8 justify-between">
             {/* <div className="hidden md:hidden lg:grid grid-cols-8 justify-between">   */}
             <a
               href=""
