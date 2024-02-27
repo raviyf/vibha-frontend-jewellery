@@ -20,7 +20,7 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
     )
   }
   return (
-    <div className="flex pl-12 items-start relative">
+    <div className="flex pl-48 items-start relative">
       <button onClick={prevSlide} className="carousel__btn carousel__btn--prev">
         &lt;
       </button>
@@ -30,7 +30,7 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
             <Container
               key={image.id}
               // className="relative w-48 h-52 sm:w-64 sm:h-96 md:w-96 md:h-96 overflow-hidden bg-ui-bg-subtle"
-              className="flex item-center w-32 h-[512px] sm:w-64 sm:h-96 md:w-[270px] md:h-[640px] lg:w-[470px]  lg:h-[680px] overflow-hidden bg-ui-bg-subtle"
+              className="flex item-center w-32 h-[340px] sm:w-64 sm:h-96 md:w-[270px] md:h-[640px] lg:w-[470px]  lg:h-[680px] overflow-hidden bg-ui-bg-subtle"
               id={image.id}
             >
               <Image

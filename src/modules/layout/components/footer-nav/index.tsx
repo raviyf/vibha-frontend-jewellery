@@ -6,20 +6,17 @@ import Link from "next/link"
 import useCountryOptions from "@lib/hooks/use-country-options"
 import { useMobileMenu } from "@lib/context/mobile-menu-context"
 import { useStore } from "@lib/context/store-context"
-import privacypolicy from "./Privacypolicy"
+import { useRouter } from "next/navigation"
+import Privacypolicy from "../../../../app/Privacypolicy/page"
 const FooterNav = () => {
   const { collections } = useCollections()
   const { product_categories } = useProductCategories()
-  const countries = useCountryOptions()
   const { countryCode } = useStore()
 
-  const setScreenCountry = () => setScreen("country")
-  const setScreenSearch = () => setScreen("search")
   const {
-    close,
-    screen: [_, setScreen],
+    screen: [_],
   } = useMobileMenu()
-
+  const router = useRouter()
   return (
     <div>
       <div className="flex flex-row">
