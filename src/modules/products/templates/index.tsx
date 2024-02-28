@@ -30,11 +30,11 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({ product }) => {
 
   return (
     <ProductProvider product={product}>
-      <div className="content-container flex flex-col items-center justify-between xl:pt-16 small:flex-row small:items-start relative">
+      <div className="content-container flex flex-col items-center justify-between xl:pt-16  small:flex-row small:items-start relative">
         <div className="md:pr-12 md:pl-12 md:pt-6 lg:pr-16 lg:pl-10 xl:pr-36">
           <ImageGallery images={product?.images || []} />
         </div>
-        <div className="flex flex-col ">
+        <div className="content-container flex flex-col ">
           <div className="flex flex-col small:sticky  small:py-5  w-full py-8 gap-y-6">
             <ProductInfo product={product} />
           </div>
