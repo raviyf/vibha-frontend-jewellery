@@ -194,7 +194,11 @@ const FooterNav = () => {
                       </a>
                     </li>
                     <li>
-                      <Link href="/Privacypolicy">Privacy Policy</Link>
+                      <Link href="/Privacypolicy">Privacy policy</Link>
+                      {/* <a href="/privacyPolicy">Privacy Policy</a> */}
+                    </li>
+                    <li>
+                      <Link href="/TermsOfService">Terms of service</Link>
                       {/* <a href="/privacyPolicy">Privacy Policy</a> */}
                     </li>
                     <li>Cookie consent</li>
