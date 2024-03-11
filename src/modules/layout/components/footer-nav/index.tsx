@@ -169,6 +169,9 @@ const FooterNav = () => {
                   </div>
                 )} */}
                 <div className="flex flex-col gap-y-2 pb-4">
+                  <span className="text-2xl font-optinonoy txt-ui-fg-base">
+                    Legal
+                  </span>
                   <ul className="grid grid-cols-1 font-helvitica gap-y-2 text-ui-fg-subtle txt-medium">
                     <li>
                       <Link href="/Privacypolicy">Privacy policy</Link>
