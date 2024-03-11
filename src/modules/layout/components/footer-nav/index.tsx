@@ -169,30 +169,7 @@ const FooterNav = () => {
                   </div>
                 )} */}
                 <div className="flex flex-col gap-y-2 pb-4">
-                  <span className="text-2xl font-optinonoy txt-ui-fg-base">
-                    Legal
-                  </span>
                   <ul className="grid grid-cols-1 font-helvitica gap-y-2 text-ui-fg-subtle txt-medium">
-                    <li>
-                      <a
-                        href="https://github.com/medusajs"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="hover:text-ui-fg-base"
-                      >
-                        Terms and conditions
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://docs.medusajs.com"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="hover:text-ui-fg-base"
-                      >
-                        Terms of use
-                      </a>
-                    </li>
                     <li>
                       <Link href="/Privacypolicy">Privacy policy</Link>
                       {/* <a href="/privacyPolicy">Privacy Policy</a> */}
@@ -201,7 +178,6 @@ const FooterNav = () => {
                       <Link href="/TermsOfService">Terms of service</Link>
                       {/* <a href="/privacyPolicy">Privacy Policy</a> */}
                     </li>
-                    <li>Cookie consent</li>
                   </ul>
                 </div>
               </div>
