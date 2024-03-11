@@ -1,7 +1,7 @@
 export default function Page() {
   return (
     <h1 className="lg:p-16 p-5 xl:p-28 border-b-2">
-      <h5>Terms of Service:</h5>{" "}
+      <h5>Terms of Service:</h5>
       <p>
         Introduction Welcome to casavibha.com, a website dedicated to [brief
         description of services/products offered]. These Terms of Service
