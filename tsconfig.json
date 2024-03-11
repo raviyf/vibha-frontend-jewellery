@@ -36,7 +36,7 @@
     "cypress/integration/product.spec.js",
     "cypress/plugins/index.js",
     ".next/types/**/*.ts",
-    "src/app/Privacypolicy/page.tsx"
+    "src/app/Returnpolicy/page.tsx"
   ],
   "exclude": [
     "node_modules",
