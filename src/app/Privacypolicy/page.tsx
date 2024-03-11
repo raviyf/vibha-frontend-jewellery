@@ -4,7 +4,7 @@ export default function Page() {
       <h2> Overview:</h2>
       <p>
         At Casa Vibha, we are committed to ensuring the satisfaction of our
-        customers. If you are not entirely satisfied with your purchase, we're
+        customers. If you are not entirely satisfied with your purchase, we are
         here to help. Our return policy allows for items to be returned within 3
         days of the receipt of your purchase for an exchange, refund, or store
         credit.
