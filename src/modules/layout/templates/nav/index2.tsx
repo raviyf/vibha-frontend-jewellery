@@ -80,10 +80,10 @@ const Navbar = () => {
               ETERNAL
             </a>
             <a
-              href=""
+              href="/Apparel/Main"
               className="py-4 px-2 text-black font-optinonoy   hover:text-gray-500 transition duration-300"
             >
-              OUTLETS
+              APPAREL
             </a>
             {/* <a
         href=""

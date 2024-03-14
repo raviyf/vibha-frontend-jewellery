@@ -8,7 +8,7 @@ import { useMobileMenu } from "@lib/context/mobile-menu-context"
 import { useStore } from "@lib/context/store-context"
 import { useRouter } from "next/navigation"
 import Privacypolicy from "../../../../app/Returnpolicy/page"
-const FooterNav = () => {
+const FooterNav2 = () => {
   const { collections } = useCollections()
   const { product_categories } = useProductCategories()
   const { countryCode } = useStore()
@@ -43,7 +43,7 @@ const FooterNav = () => {
           </p>
         </div>
         <div className="">
-          <p className="  font-bold font-holispay pb-8 lg:pl-[28rem] pl-8 text-9xl sm:pl-[15rem] sm:text-[14rem] md:pl-[10rem]  ">
+          <p className=" text-darkmaroon font-bold font-holispay pb-8 lg:pl-[28rem] pl-8 text-9xl sm:pl-[15rem] sm:text-[14rem] md:pl-[10rem]  ">
             V
           </p>
         </div>
@@ -179,7 +179,7 @@ const FooterNav = () => {
                     </li>
                     <li>
                       <Link href="/TermsOfService">Terms of service</Link>
-                      <Link href="/Apparel">Apparel</Link>
+
                       {/* <a href="/privacyPolicy">Privacy Policy</a> */}
                     </li>
                   </ul>
@@ -189,7 +189,7 @@ const FooterNav = () => {
           </div>
         </div>
 
-        <div className="flex  w-full   items-center justify-between text-sm md-xs text-white  text-ui-fg-muted bg-black ">
+        <div className="flex  w-full   items-center justify-between text-sm md-xs text-white  text-ui-fg-muted bg-darkmaroon ">
           <Link href="/" className="text-2xl md:pl-10 font-optinonoy md-6xl ">
             VIBHA
           </Link>
@@ -207,4 +207,4 @@ const FooterNav = () => {
   )
 }
 
-export default FooterNav
+export default FooterNav2

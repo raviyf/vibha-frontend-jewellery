@@ -11,7 +11,7 @@ const SideMenuItems = {
   Search: "",
   Account: "/account",
   Cart: "/cart",
-  Apparel: "http://localhost:8001/",
+  Apparel: "/Apparel/Main",
 }
 
 const SideMenu = ({ searchModalOpen }: { searchModalOpen: () => void }) => {

@@ -5,17 +5,20 @@ import { useMemo } from "react"
 import { InfiniteProductPage, ProductPreviewType } from "types/global"
 import sortProducts from "@lib/util/sort-products"
 import { SortOptions } from "@modules/store/components/refinement-list/sort-products"
+import { StoreGetProductsParams } from "@medusajs/medusa"
 
 type UsePreviewProps<T> = {
   pages?: T[]
   region?: Region
   sortBy?: SortOptions
+  collection_id?: StoreGetProductsParams
 }
 
 const usePreviews = <T extends InfiniteProductPage>({
   pages,
   region,
   sortBy,
+  collection_id,
 }: UsePreviewProps<T>) => {
   const previews: ProductPreviewType[] = useMemo(() => {
     if (!pages || !region) {
@@ -33,9 +36,8 @@ const usePreviews = <T extends InfiniteProductPage>({
     )
 
     sortBy && sortProducts(transformedProducts, sortBy)
-
     return transformedProducts
-  }, [pages, region, sortBy])
+  }, [pages, region, sortBy, collection_id])
 
   return previews
 }

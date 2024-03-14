@@ -35,6 +35,8 @@ module.exports = {
         },
         darkmaroon: "#5A2A38",
         gold: "#CAB273",
+        cream: "#FAEADA",
+
         gradient:
           "linear-gradient(173deg, #FAFAFA -21.37%, #E9E9E9 67.54%, rgba(227, 227, 224, 0.24) 94.75%);",
       },
@@ -74,6 +76,7 @@ module.exports = {
         "3xl": "2rem",
         "10xl": "20rem",
       },
+
       fontFamily: {
         sans: [
           "Inter",
