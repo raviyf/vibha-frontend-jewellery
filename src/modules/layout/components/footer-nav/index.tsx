@@ -7,7 +7,7 @@ import useCountryOptions from "@lib/hooks/use-country-options"
 import { useMobileMenu } from "@lib/context/mobile-menu-context"
 import { useStore } from "@lib/context/store-context"
 import { useRouter } from "next/navigation"
-import Privacypolicy from "../../../../app/Privacypolicy/page"
+import Privacypolicy from "../../../../app/Returnpolicy/page"
 const FooterNav = () => {
   const { collections } = useCollections()
   const { product_categories } = useProductCategories()
