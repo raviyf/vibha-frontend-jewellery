@@ -1,7 +1,7 @@
 import clsx from "clsx"
 import Link from "next/link"
 import { ProductPreviewType } from "types/global"
-import Thumbnail from "../thumbnail"
+import Thumbnail from "@modules/products/components/thumbnail"
 import { Text } from "@medusajs/ui"
 
 const ProductPreview2 = ({
@@ -11,7 +11,7 @@ const ProductPreview2 = ({
   price,
   isFeatured,
 }: ProductPreviewType) => (
-  <Link href={`/products/${handle}`} className="group">
+  <Link href={`/Apparel/products/${handle}`} className="group">
     <div>
       <Thumbnail thumbnail={thumbnail} size="full" isFeatured={isFeatured} />
       <div className="flex txt-compact-medium mt-4 justify-between">

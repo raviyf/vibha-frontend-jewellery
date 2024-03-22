@@ -21,10 +21,6 @@ const sortOptions = [
     value: "price_desc",
     label: "Price: High -> Low",
   },
-  {
-    value: "price_desc",
-    label: "Price: High -> Low",
-  },
 ]
 
 const SortProducts = ({ sortBy, setSortBy }: SortProductsProps) => {

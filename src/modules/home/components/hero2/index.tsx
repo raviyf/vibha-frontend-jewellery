@@ -14,7 +14,7 @@ const Hero2 = () => {
           </p>
 
           <div className="flex flex-row sm:pl-[8rem] md:pl-[14rem] pl-[6rem] py-4 xl:pl-[20rem]">
-            <Link href="http://localhost:8000/store">
+            <Link href={`/Apparel/collection/apparel`}>
               <span className="md:py-2 sm:px-4 rounded-full md:px-10 2xl:px-40 px-3 py-2 font-optinonoy bg-cream text-black  ">
                 SHOP NOW
               </span>
@@ -49,9 +49,24 @@ const Hero2 = () => {
         </span>
       </div>
       <p className="p-5  flex flex-row font-optinonoy items-center justify-between">
-        <span className="sm:pl-10 lg:pl-28"> Chudidhar</span>
-        <span className="lg:">Saree</span>
-        <span className="sm:pr-10 lg:pr-28">Benares</span>
+        <Link
+          href="/collections/apparel"
+          className="md:py-2 md:px-12 sm:px-6 px-1 py-2 sm:py-2 font-holispay border-black border-2 text-yellow-400 rounded-lg bg-white font-semibold hover:text-gray-500 transition duration-300"
+        >
+          <span className=""> Chudidhar</span>
+        </Link>
+        <Link
+          href="/collections/apparel"
+          className="md:py-2 md:px-12 sm:px-6 px-1 py-2 sm:py-2 font-holispay border-black border-2 text-yellow-400 rounded-lg bg-white font-semibold hover:text-gray-500 transition duration-300"
+        >
+          <span className="">Saree</span>
+        </Link>
+        <Link
+          href="/collections/apparel"
+          className="md:py-2 md:px-12 sm:px-6 px-1 py-2 sm:py-2 font-holispay border-black border-2 text-yellow-400 rounded-lg bg-white font-semibold hover:text-gray-500 transition duration-300"
+        >
+          <span className="">Benares</span>
+        </Link>
       </p>
 
       <div>

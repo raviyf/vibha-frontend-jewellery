@@ -7,7 +7,7 @@ import useCountryOptions from "@lib/hooks/use-country-options"
 import { useMobileMenu } from "@lib/context/mobile-menu-context"
 import { useStore } from "@lib/context/store-context"
 import { useRouter } from "next/navigation"
-import Privacypolicy from "../../../../app/Returnpolicy/page"
+import Privacypolicy from "../../../../app/ReturnPolicy/page"
 const FooterNav = () => {
   const { collections } = useCollections()
   const { product_categories } = useProductCategories()
@@ -174,12 +174,22 @@ const FooterNav = () => {
                   </span>
                   <ul className="grid grid-cols-1 font-helvitica gap-y-2 text-ui-fg-subtle txt-medium">
                     <li>
-                      <Link href="/Returnpolicy">Return policy</Link>
+                      <Link href="/ReturnPolicy">Return policy</Link>
                       {/* <a href="/privacyPolicy">Privacy Policy</a> */}
                     </li>
                     <li>
                       <Link href="/TermsOfService">Terms of service</Link>
-                      <Link href="/Apparel">Apparel</Link>
+
+                      {/* <a href="/privacyPolicy">Privacy Policy</a> */}
+                    </li>
+                    <li>
+                      <Link href="/PrivacyPolicy">Privacy policy</Link>
+
+                      {/* <a href="/privacyPolicy">Privacy Policy</a> */}
+                    </li>
+                    <li>
+                      <Link href="/CustomerService">Customer service</Link>
+
                       {/* <a href="/privacyPolicy">Privacy Policy</a> */}
                     </li>
                   </ul>

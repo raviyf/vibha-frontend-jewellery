@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Tab } from "@headlessui/react"
 import { PricedProduct } from "@medusajs/medusa/dist/types/pricing"
 import Back from "@modules/common/icons/back"
