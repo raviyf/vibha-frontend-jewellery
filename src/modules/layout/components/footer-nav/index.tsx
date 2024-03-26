@@ -173,6 +173,14 @@ const FooterNav = () => {
                   </span>
                   <ul className="grid grid-cols-1 font-helvitica gap-y-2 text-ui-fg-subtle txt-medium">
                     <li>
+                      <Link href="/AboutUs">About us</Link>
+                    </li>
+                    <li>
+                      <Link href="/RefundsAndCancellations">
+                        Refunds and cancellations
+                      </Link>
+                    </li>
+                    <li>
                       <Link href="/ReturnPolicy">Return policy</Link>
                       {/* <a href="/privacyPolicy">Privacy Policy</a> */}
                     </li>
@@ -188,6 +196,11 @@ const FooterNav = () => {
                     </li>
                     <li>
                       <Link href="/CustomerService">Customer service</Link>
+
+                      {/* <a href="/privacyPolicy">Privacy Policy</a> */}
+                    </li>
+                    <li>
+                      <Link href="/ShippingPolicy">Shipping policy</Link>
 
                       {/* <a href="/privacyPolicy">Privacy Policy</a> */}
                     </li>
@@ -207,7 +220,8 @@ const FooterNav = () => {
               © {new Date().getFullYear()} VIBHA. All rights reserved.
             </span>
             <span>
-              VIBHA and the V logo are registered and trademarks of VIBHA.
+              VIBHA and the V logo are registered and trademarks of VIBHA
+              International.
             </span>
           </p>
         </div>

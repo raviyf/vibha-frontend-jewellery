@@ -19,34 +19,42 @@ export default function Page() {
         update such information to keep it accurate, current, and complete.
         casavibha.com reserves the right to suspend or terminate your account if
         any information provided during the registration process or thereafter
-        proves to be inaccurate, not current, or incomplete. User Conduct You
-        agree not to use the Service:  For any unlawful purpose or in violation
-        of any local, state, national, or international law or regulation.  To
-        infringe upon the rights of others, including, but not limited to,
-        intellectual property rights.  To submit false or misleading
-        information.  To upload or transmit viruses or any other type of
-        malicious code.  To harvest or collect information of others without
-        their consent.  To interfere with or circumvent the security features
-        of the Service. Intellectual Property The Service and its original
-        content, features, and functionality are and will remain the exclusive
-        property of casavibha.com and its licensors. The Service is protected by
-        copyright, trademark, and other laws of both the United States and
-        foreign countries. Our trademarks and trade dress may not be used in
-        connection with any product or service without the prior written consent
-        of casavibha.com. Purchases If you wish to purchase any product or
-        service made available through the Service Purchase, you may be asked to
-        supply certain information relevant to your Purchase, including, without
+        proves to be inaccurate, not current, or incomplete.
+      </p>
+      <h2> User Conduct You agree not to use the Service:</h2>
+      <p>
+        {" "}
+         For any unlawful purpose or in violation of any local, state,
+        national, or international law or regulation.  To infringe upon the
+        rights of others, including, but not limited to, intellectual property
+        rights.  To submit false or misleading information.  To upload or
+        transmit viruses or any other type of malicious code.  To harvest or
+        collect information of others without their consent.  To interfere with
+        or circumvent the security features of the Service. Intellectual
+        Property The Service and its original content, features, and
+        functionality are and will remain the exclusive property of
+        casavibha.com and its licensors. The Service is protected by copyright,
+        trademark, and other laws of both the United States and foreign
+        countries. Our trademarks and trade dress may not be used in connection
+        with any product or service without the prior written consent of
+        casavibha.com. Purchases If you wish to purchase any product or service
+        made available through the Service Purchase, you may be asked to supply
+        certain information relevant to your Purchase, including, without
         limitation, your credit card number, the expiration date of your credit
-        card, your billing address, and your shipping information. You represent
-        and warrant that: (i) you have the legal right to use any credit card(s)
-        or other payment method(s) in connection with any Purchase; and that
-        (ii) the information you supply to us is true, correct, and complete.
-        Termination We may terminate or suspend your account and bar access to
-        the Service immediately, without prior notice or liability, under our
-        sole discretion, for any reason whatsoever and without limitation,
-        including but not limited to a breach of the Terms. Limitation of
-        Liability In no event shall casavibha.com, nor its directors, employees,
-        partners, agents, suppliers, or affiliates, be liable for any indirect,
+        card, your billing address, and your shipping information.
+      </p>{" "}
+      <h2>You represent and warrant that:</h2>
+      <p>
+        {" "}
+        (i) you have the legal right to use any credit card(s) or other payment
+        method(s) in connection with any Purchase; and that (ii) the information
+        you supply to us is true, correct, and complete. Termination We may
+        terminate or suspend your account and bar access to the Service
+        immediately, without prior notice or liability, under our sole
+        discretion, for any reason whatsoever and without limitation, including
+        but not limited to a breach of the Terms. Limitation of Liability In no
+        event shall casavibha.com, nor its directors, employees, partners,
+        agents, suppliers, or affiliates, be liable for any indirect,
         incidental, special, consequential or punitive damages, including
         without limitation, loss of profits, data, use, goodwill, or other
         intangible losses, resulting from (i) your access to or use of or
