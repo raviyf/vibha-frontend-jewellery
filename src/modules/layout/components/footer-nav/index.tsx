@@ -7,7 +7,6 @@ import useCountryOptions from "@lib/hooks/use-country-options"
 import { useMobileMenu } from "@lib/context/mobile-menu-context"
 import { useStore } from "@lib/context/store-context"
 import { useRouter } from "next/navigation"
-import Privacypolicy from "../../../../app/Privacypolicy/page"
 const FooterNav = () => {
   const { collections } = useCollections()
   const { product_categories } = useProductCategories()
@@ -174,30 +173,37 @@ const FooterNav = () => {
                   </span>
                   <ul className="grid grid-cols-1 font-helvitica gap-y-2 text-ui-fg-subtle txt-medium">
                     <li>
-                      <a
-                        href="https://github.com/medusajs"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="hover:text-ui-fg-base"
-                      >
-                        Terms and conditions
-                      </a>
+                      <Link href="/AboutUs">About us</Link>
                     </li>
                     <li>
-                      <a
-                        href="https://docs.medusajs.com"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="hover:text-ui-fg-base"
-                      >
-                        Terms of use
-                      </a>
+                      <Link href="/RefundsAndCancellations">
+                        Refunds and cancellations
+                      </Link>
                     </li>
                     <li>
-                      <Link href="/Privacypolicy">Privacy Policy</Link>
+                      <Link href="/ReturnPolicy">Return policy</Link>
                       {/* <a href="/privacyPolicy">Privacy Policy</a> */}
                     </li>
-                    <li>Cookie consent</li>
+                    <li>
+                      <Link href="/TermsOfService">Terms of service</Link>
+
+                      {/* <a href="/privacyPolicy">Privacy Policy</a> */}
+                    </li>
+                    <li>
+                      <Link href="/PrivacyPolicy">Privacy policy</Link>
+
+                      {/* <a href="/privacyPolicy">Privacy Policy</a> */}
+                    </li>
+                    <li>
+                      <Link href="/CustomerService">Customer service</Link>
+
+                      {/* <a href="/privacyPolicy">Privacy Policy</a> */}
+                    </li>
+                    <li>
+                      <Link href="/ShippingPolicy">Shipping policy</Link>
+
+                      {/* <a href="/privacyPolicy">Privacy Policy</a> */}
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -214,7 +220,8 @@ const FooterNav = () => {
               © {new Date().getFullYear()} VIBHA. All rights reserved.
             </span>
             <span>
-              VIBHA and the V logo are registered and trademarks of VIBHA.
+              VIBHA and the V logo are registered and trademarks of VIBHA
+              International.
             </span>
           </p>
         </div>
